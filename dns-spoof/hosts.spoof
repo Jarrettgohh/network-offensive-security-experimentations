@@ -1,1 +1,7 @@
-192.168.1.101 *
+10.0.2.5 *gohxiangzheng.com
+
+10.0.2.5 *.msftconnecttest.com
+10.0.2.5 *.msftncsi.com
+
+10.0.2.5 *httpforever.com
+10.0.2.5 *httpbin.org
